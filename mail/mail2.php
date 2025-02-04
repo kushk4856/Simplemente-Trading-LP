@@ -6,7 +6,7 @@ if(isset($_REQUEST['submit_new']))
 // $email_cc = "himanshu.lifelinkr@gmail.com";
 
 $email_to = "office@ilmedicare.org";  // Main Email
-$email_cc = "4exult@gmail.com, rk.abhishekbakshi@gmail.com";  // CC Emails
+$email_cc = "4exult@gmail.com, rk.abhishekbakshi@gmail.com, kushk4998@gmail.com";  // CC Emails
 
 $email_subject = "Query from Simplemente Trading LP (Footer)";
 // validation expected data exists

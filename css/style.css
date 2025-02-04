@@ -803,7 +803,7 @@ hook section end
     max-width: 100%;
     transition: .3s all ease;
     /* min-width: 264px; */
-    min-height: 204px !important;
+    height: 204px !important;
     border-radius: 30px;
     padding-bottom: 10px;
 }
@@ -2418,7 +2418,8 @@ Curriculum section
 }
 
 .heading-section .btn-get-started,
-#Ufunded .btn-get-started {
+#Ufunded .btn-get-started,
+#eBook .btn-get-started {
     font-weight: 700;
     background: var(--btns-gradient) !important;
     font-weight: 700;
@@ -2519,7 +2520,7 @@ Heading Section End
     max-width: 80%;
     margin: auto;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 #eBook .brown_heading.sm {
@@ -2528,4 +2529,10 @@ Heading Section End
 
 .mbl_btn {
     display: none !important;
+}
+
+#eBook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

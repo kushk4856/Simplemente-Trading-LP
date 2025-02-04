@@ -3,40 +3,49 @@
 ? => OnLeaveCard Js :----
 =================================================
 */
+const onLeaveOpenBtn = document.getElementById("openOnLeave");
 
+let Call_Back_NO = document.querySelector("#Call_Back_NO");
+const onLeaveCard = document.querySelector(".OnLeaveCard");
+const card = document.querySelector(".Card");
 document.addEventListener("DOMContentLoaded", function () {
   let count = 0;
-  let Call_Back_NO = document.querySelector("#Call_Back_NO");
-  const onLeaveCard = document.querySelector(".OnLeaveCard");
-  const card = document.querySelector(".Card");
-
-  // Make sure the OnLeaveCard is initially hidden
   onLeaveCard.style.display = "none";
 
-  // Listen for mouseleave event at the top of the page (clientY <= 0)
+  // Show card on first mouse leave
   document.addEventListener("mouseleave", function (event) {
     if (event.clientY <= 0 && count === 0) {
-      onLeaveCard.style.display = "flex"; // Show the OnLeaveCard
-      count = 1; // Prevent showing the card again
+      onLeaveCard.style.display = "flex";
+      count = 1;
     }
   });
 
-  // When user clicks outside the OnLeaveCard, hide it
+  // Manual open button handler
+  onLeaveOpenBtn.addEventListener("click", () => {
+    onLeaveCard.style.display = "flex";
+  });
+
+  // Close card when clicking outside
   document.addEventListener("click", function (event) {
-    if (onLeaveCard.style.display !== "none") {
-      if (!card.contains(event.target)) {
+    if (onLeaveCard.style.display === "flex") {
+      const isClickInsideCard = card.contains(event.target);
+      const isClickOnOpenButton =
+        event.target === onLeaveOpenBtn ||
+        onLeaveOpenBtn.contains(event.target);
+
+      if (!isClickInsideCard && !isClickOnOpenButton) {
         onLeaveCard.style.display = "none";
-        count = 1;
+        // Keep count=1 to maintain initial trigger state
       }
     }
   });
 
   // No Thanks button functionality
-  document.querySelector(".No_ThanksBtn").addEventListener("click", (e) => {
-    e.preventDefault();
-    count = 1; // Prevent the card from showing again
-    onLeaveCard.style.display = "none";
-  });
+  // document.querySelector(".No_ThanksBtn").addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //   count = 1; // Prevent the card from showing again
+  //   onLeaveCard.style.display = "none";
+  // });
 
   // Form submission - hide OnLeaveCard and increment count
   Call_Back_NO.addEventListener("submit", (e) => {
@@ -218,7 +227,7 @@ document.querySelectorAll(".pagination-btn").forEach((button) => {
 ==========================================
 */
 
-const whoSection = document.getElementById("eBook");
+const whoSection = document.getElementById("eBook2");
 const stickyDiv = document.getElementById("stickyDiv");
 
 let lastScrollY = window.scrollY;
@@ -230,10 +239,12 @@ const observer = new IntersectionObserver(
 
       if (entry.isIntersecting && scrollingDown) {
         stickyDiv.style.position = "absolute";
-        stickyDiv.style.top = "-1004px";
+        stickyDiv.style.top = "-1209px";
+        console.log("intersecting");
       } else if (!entry.isIntersecting && !scrollingDown) {
         stickyDiv.style.position = "fixed";
         stickyDiv.style.top = "95px";
+        console.log("intersected");
       }
 
       lastScrollY = currentScrollY;
@@ -241,7 +252,7 @@ const observer = new IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0.92,
+    threshold: 0.2,
   }
 );
 

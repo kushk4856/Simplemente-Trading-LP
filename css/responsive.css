@@ -762,6 +762,14 @@
     align-items: center;
   }
 
+  .OnLeaveCard .Card {
+    width: 90%;
+  }
+
+  .OnLeaveCard .Card .input {
+    margin: 10px 30px;
+  }
+
   #eBook .sub_para {
     max-width: 100%;
   }
@@ -889,7 +897,7 @@
   }
 
   .benefits_block_content img {
-    min-height: 140px !important;
+    height: 140px !important;
   }
 
 
