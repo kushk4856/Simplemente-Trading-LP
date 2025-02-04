@@ -559,10 +559,11 @@
   }
 
   .card img {
-    width: fit-content;
+    /* width: fit-content; */
     float: none;
     position: relative;
     top: 30px;
+    /* width: 147px; */
   }
 
   .card-content {
