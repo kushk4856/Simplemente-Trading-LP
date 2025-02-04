@@ -8,7 +8,7 @@ if(isset($_REQUEST['submit_new2']))
 $email_to = "office@ilmedicare.org";  // Main Email
 $email_cc = "4exult@gmail.com, rk.abhishekbakshi@gmail.com";  // CC Emails
 
-$email_subject = "Query from 24X7 Doctor Service Long LP (Popup)";
+$email_subject = "Query from Simplemente Trading LP (Popup)";
 // validation expected data exists
 if(!isset($_POST['mbl_no2']))
 {
@@ -16,6 +16,8 @@ die('We are sorry, but there appears to be a problem with the form you submitted
 }
 
 $mblno =$_POST['mbl_no2']; // required
+$user_name =$_POST['name']; // required
+$email =$_POST['email']; // required
 
 
 
@@ -53,6 +55,8 @@ return str_replace($bad,"",$string);
 
 $ip = $_SERVER['REMOTE_ADDR'];
 @$email_message .= "Mobile: ".clean_string($mblno)."\n";
+@$email_message .= "User Name: ".clean_string($user_name)."\n";
+@$email_message .= "User Email: ".clean_string($email)."\n";
 @$email_message .= "IP: ".clean_string($ip)."\n";
 $email_message .= "Full URL: " . clean_string($full_url) . "\n";
 $email_message .= "UTM Source: " . clean_string($utm_source) . "\n";

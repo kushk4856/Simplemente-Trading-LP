@@ -218,7 +218,7 @@ document.querySelectorAll(".pagination-btn").forEach((button) => {
 ==========================================
 */
 
-const whoSection = document.getElementById("who3");
+const whoSection = document.getElementById("eBook");
 const stickyDiv = document.getElementById("stickyDiv");
 
 let lastScrollY = window.scrollY;

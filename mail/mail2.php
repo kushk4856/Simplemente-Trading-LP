@@ -8,7 +8,7 @@ if(isset($_REQUEST['submit_new']))
 $email_to = "office@ilmedicare.org";  // Main Email
 $email_cc = "4exult@gmail.com, rk.abhishekbakshi@gmail.com";  // CC Emails
 
-$email_subject = "Query from 24X7 Doctor Service Long LP (Footer)";
+$email_subject = "Query from Simplemente Trading LP (Footer)";
 // validation expected data exists
 if(!isset($_POST['mbl_no']))
 {

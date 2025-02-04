@@ -850,7 +850,7 @@ hook section end
     margin-bottom: 8px;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #566890;
+    color: var(--brown-color);
     text-align: center
 }
 
@@ -2398,8 +2398,8 @@ Curriculum section
 
 /* heading secion start   */
 
-#who ul,
-#who-2 ul {
+#sandra ul,
+#sandra-2 ul {
     padding-inline: 16px;
     margin-top: -4px;
 }
@@ -2408,17 +2408,17 @@ Curriculum section
     border-radius: 10px;
 }
 
-#who-2 .bottom-two-section {
+#sandra-2 .bottom-two-section {
     margin: 0 !important;
 }
 
-#who .white_block,
-#who-2 .white_block {
+#sandra .white_block,
+#sandra-2 .white_block {
     padding-bottom: 40px;
 }
 
 .heading-section .btn-get-started,
-#team .btn-get-started {
+#Ufunded .btn-get-started {
     font-weight: 700;
     background: var(--btns-gradient) !important;
     font-weight: 700;
@@ -2507,17 +2507,25 @@ Heading Section End
     padding-bottom: 5px;
 }
 
-#who3 .brown_heading {
+#eBook .brown_heading {
     text-align: center;
 }
 
-#who3 .sub_para {
+#sandra .brown_heading {
+    text-align: left !important;
+}
+
+#eBook .sub_para {
     max-width: 80%;
     margin: auto;
     text-align: center;
     margin-bottom: 24px;
 }
 
-#who3 .brown_heading.sm {
+#eBook .brown_heading.sm {
     font-size: 30px;
+}
+
+.mbl_btn {
+    display: none !important;
 }
