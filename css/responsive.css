@@ -139,9 +139,19 @@
 @media (min-width: 992px) and (max-width: 1423px) {
   .right_register {
     padding: 10px;
-    font-size: 12px;
+    font-size: 17px;
+  }
+
+  .right_block {
+    right: 10%;
+  }
+
+  .about_img img {
+    margin-left: -2px;
   }
 }
+
+
 
 @media (min-width: 1200px) {
   .container {

@@ -803,7 +803,9 @@ hook section end
     max-width: 100%;
     transition: .3s all ease;
     /* min-width: 264px; */
-    height: 204px !important;
+    /* height: 204px !important; */
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
     padding-bottom: 10px;
 }
@@ -1307,7 +1309,7 @@ hook section end
     width: 407px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .content_area h4 {
@@ -1317,6 +1319,7 @@ hook section end
     font-family: Nunito;
     text-transform: uppercase;
     font-weight: 500;
+
 }
 
 .right-area .input {
@@ -1399,7 +1402,7 @@ aside {
 
 .right_register {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
     letter-spacing: 1px;
     display: block;
@@ -1734,7 +1737,7 @@ Schedule a Free Demo form Section Start
     outline: none;
     padding: 8px 16px 8px 8px;
     font-size: 16px;
-    color: #fff;
+    color: #000;
     min-width: 0;
 }
 
@@ -2494,9 +2497,18 @@ Heading Section End
     width: 102px; */
 }
 
-.hero_img {
+.hero_img_div {
     width: 585px;
-    height: 320px;
+    height: 330px;
+
+}
+
+.hero_img {
+    /* width: 585px;
+    height: 320px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -2535,4 +2547,9 @@ Heading Section End
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.benefits_img_div {
+    width: 220px;
+    height: 156px;
 }
