@@ -1021,6 +1021,11 @@
   .tab.active {
     font-size: 14px;
   }
+
+  .benefits_img_div {
+    width: 130px;
+    height: 150px;
+  }
 }
 
 /* @media (max-width: 340px) {
