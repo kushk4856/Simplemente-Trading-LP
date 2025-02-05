@@ -377,7 +377,7 @@ section {
 #hero .btn-get-started {
     background: var(--btns-gradient);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     letter-spacing: 1px;
     display: inline-block;
@@ -797,10 +797,20 @@ hook section end
 .benefits_block_content {
     text-align: center;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first_section_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .benefits_block_content img {
     max-width: 100%;
+    width: 100%;
     transition: .3s all ease;
     /* min-width: 264px; */
     /* height: 204px !important; */
@@ -1219,7 +1229,7 @@ hook section end
 .content_area {
     width: 100%;
     background-color: #F2eFea;
-
+    padding-block: 1.5rem;
     display: flex;
     margin-top: 60px;
     justify-content: space-evenly;
@@ -1294,7 +1304,7 @@ hook section end
 
 .center-area .address div li p {
     color: #707070;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Nunito;
     font-weight: 400;
     margin-bottom: 10px;
@@ -1355,7 +1365,7 @@ hook section end
 }
 
 .right-area button:hover {
-    background-color: #815433;
+    background-color: #da8510;
 }
 
 
@@ -1402,7 +1412,7 @@ aside {
 
 .right_register {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: 1px;
     display: block;
